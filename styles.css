@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #2263F3;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    color: white;
+    font-family: 'Sans-serif', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
+.main-title {
+    font-family: 'Sans-serif', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.main-title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-image: url('wave.svg'); /* SVG or background pattern here */
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    top: -70px;
+    left: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.coming-soon {
+    font-size: 2rem;
+    font-weight: bold;
+    color: orange;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    .coming-soon {
+        font-size: 1.5rem;
+    }
+}
