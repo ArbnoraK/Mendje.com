@@ -14,7 +14,8 @@
     body, html {
       width: 100%;
       height: 100%;
-      overflow: hidden;
+      margin: 0;
+      padding: 0;
       background-color: #fff;
     }
     .container {
@@ -23,16 +24,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
     }
     .container svg {
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;  /* Ensures the SVG covers the entire viewport */
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Embedding the modified SVG directly -->
+    <!-- Use the modified SVG directly -->
     <object type="image/svg+xml" data="coming-soon-responsive.svg" style="width: 100%; height: 100%;"></object>
   </div>
 </body>
