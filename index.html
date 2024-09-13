@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG Viewer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Landing Page</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+    .container {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 600px) {
+      /* Adjustments for mobile */
+      .container {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div style="text-align: center;">
-        <h1>My SVG</h1>
-        <object type="image/svg+xml" data="Artboard 1.svg" width="100%" height="600px"></object>
-    </div>
+  <!-- Embed your SVG file -->
+  <div class="container">
+    <img src="coming-soon.svg" alt="Landing Page Image" style="width:100%; height:auto;">
+  </div>
 </body>
 </html>
