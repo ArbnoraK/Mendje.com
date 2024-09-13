@@ -6,32 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Landing Page</title>
   <style>
-    body, html {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
       width: 100%;
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin: 0;
+      padding: 0;
       background-color: #fff;
     }
     .container {
-      max-width: 100%;
-      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh; /* Full viewport height */
+      overflow: hidden;
     }
-    @media (max-width: 600px) {
-      /* Adjustments for mobile */
-      .container {
-        width: 90%;
-      }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <!-- Embed your SVG file -->
   <div class="container">
-    <img src="coming-soon.svg" alt="Landing Page Image" style="width:100%; height:auto;">
+    <img src="coming-soon.svg" alt="Landing Page Image">
   </div>
 </body>
 </html>
